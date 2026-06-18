@@ -11,7 +11,7 @@ export default function QuizPage() {
   const [currentQ, setCurrentQ] = useState(0);
 
   useEffect(() => {
-    const stored = sessionStorage.getItem('tickets_user');
+    const stored = sessionStorage.getItem('road_user');
     if (!stored) { router.push('/'); return; }
   }, [router]);
 
@@ -28,7 +28,7 @@ export default function QuizPage() {
       return;
     }
     const score = answers.filter((a, i) => a === quizQuestions[i].correct).length;
-    sessionStorage.setItem('tickets_quiz', JSON.stringify({ answers, score, passed: score >= 4 }));
+    sessionStorage.setItem('road_quiz', JSON.stringify({ answers, score, passed: score >= 4 }));
     setSubmitted(true);
   }
 
@@ -41,9 +41,9 @@ export default function QuizPage() {
       <div className="min-h-screen bg-gray-50 flex flex-col">
         <header className="bg-white shadow-sm">
           <div className="max-w-2xl mx-auto px-4 py-4 flex items-center gap-3">
-            <div className="text-2xl">🎫</div>
+            <div className="text-2xl">🏔️</div>
             <div>
-              <h1 className="text-base font-bold text-[#1a2f5e]">Ticket Office Induction</h1>
+              <h1 className="text-base font-bold text-[#1a2f5e]">Road & Car Park Induction</h1>
               <p className="text-xs text-gray-500">Rainbow Ski Area</p>
             </div>
           </div>
@@ -56,7 +56,7 @@ export default function QuizPage() {
               <p className="text-lg mt-1">{score} / {quizQuestions.length} correct</p>
               <p className="text-sm mt-2 opacity-90">
                 {passed
-                  ? 'Great work! Your Rentals induction is now complete.'
+                  ? 'Great work! Your Road & Car Park induction is now complete.'
                   : 'You need 4/5 to pass. Review the induction steps and try again.'}
               </p>
             </div>
@@ -123,10 +123,10 @@ export default function QuizPage() {
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <header className="bg-white shadow-sm sticky top-0 z-10">
         <div className="max-w-2xl mx-auto px-4 py-3 flex items-center gap-3">
-          <div className="text-2xl">🎫</div>
+          <div className="text-2xl">🏔️</div>
           <div className="flex-1">
             <div className="flex items-center justify-between">
-              <span className="text-xs font-semibold text-[#1a2f5e]">Ticket Office Quiz</span>
+              <span className="text-xs font-semibold text-[#1a2f5e]">Road & Car Park Quiz</span>
               <span className="text-xs text-gray-500">Question {currentQ + 1} of {quizQuestions.length}</span>
             </div>
             <div className="mt-1.5 h-2 bg-gray-200 rounded-full overflow-hidden">

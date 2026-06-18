@@ -19,7 +19,7 @@ export default function WelcomePage() {
     e.preventDefault();
     const errs = validate();
     if (Object.keys(errs).length > 0) { setErrors(errs); return; }
-    sessionStorage.setItem('tickets_user', JSON.stringify(form));
+    sessionStorage.setItem('road_user', JSON.stringify(form));
     router.push('/step/1');
   }
 
@@ -27,10 +27,10 @@ export default function WelcomePage() {
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <header className="bg-white shadow-sm">
         <div className="max-w-2xl mx-auto px-4 py-4 flex items-center gap-4">
-          <div className="text-3xl">🎫</div>
+          <div className="text-3xl">🏔️</div>
           <div>
-            <h1 className="text-lg font-bold text-[#1a2f5e]">Ticket Office Induction</h1>
-            <p className="text-sm text-gray-500">Rainbow Ski Area · Section F · 2026</p>
+            <h1 className="text-lg font-bold text-[#1a2f5e]">Road & Car Park Induction</h1>
+            <p className="text-sm text-gray-500">Rainbow Ski Area · Section K · 2026</p>
           </div>
         </div>
       </header>
@@ -39,16 +39,16 @@ export default function WelcomePage() {
         <div className="w-full max-w-lg space-y-5">
           <div className="bg-white rounded-2xl shadow-md overflow-hidden">
             <div className="bg-[#1a2f5e] px-6 py-5 text-white">
-              <div className="text-3xl mb-2">🏔️</div>
-              <h2 className="text-xl font-bold">Welcome to the Ticket Office</h2>
+              <div className="text-3xl mb-2">🚗</div>
+              <h2 className="text-xl font-bold">Welcome, Volunteer!</h2>
               <p className="text-blue-200 text-sm mt-1">Rainbow Ski Area · Nelson Lakes · Te Tau Ihu</p>
             </div>
             <div className="px-6 py-5">
               <p className="text-gray-600 text-sm leading-relaxed">
-                This induction covers the <strong>Ticket Office operational manual (Section F)</strong> — money handling, day passes, memberships, discounts, daily operations, and more. It takes approximately <strong>10–15 minutes</strong>. A short quiz at the end confirms your understanding.
+                This induction covers the <strong>Road & Car Park manual (Section K)</strong> — car park management, the chains policy, health & safety on the road, and what to do in an emergency. It takes approximately <strong>10–15 minutes</strong>. A short quiz at the end confirms your understanding.
               </p>
               <div className="mt-4 flex flex-wrap gap-3 text-xs text-gray-500">
-                <span>📖 4 induction steps</span>
+                <span>📖 5 induction steps</span>
                 <span>❓ 5-question quiz</span>
                 <span>✅ Pass mark: 4/5</span>
               </div>
@@ -79,6 +79,8 @@ export default function WelcomePage() {
                 >
                   <option value="">Select your role</option>
                   <option>Volunteer</option>
+                  <option>Car Park Volunteer</option>
+                  <option>Road Patrol Volunteer</option>
                   <option>Staff Member</option>
                   <option>Seasonal Employee</option>
                 </select>

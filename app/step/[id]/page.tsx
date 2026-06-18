@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { useRouter, useParams } from 'next/navigation';
 import { steps } from '@/lib/content';
 
-const TOTAL_STEPS = 4;
+const TOTAL_STEPS = 5;
 
 export default function StepPage() {
   const router = useRouter();
@@ -16,7 +16,7 @@ export default function StepPage() {
   const step = steps.find(s => s.id === stepId);
 
   useEffect(() => {
-    const stored = sessionStorage.getItem('tickets_user');
+    const stored = sessionStorage.getItem('road_user');
     if (!stored) { router.push('/'); return; }
     const user = JSON.parse(stored);
     setUserName(user.name?.split(' ')[0] || '');
@@ -99,10 +99,10 @@ export default function StepPage() {
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <header className="bg-white shadow-sm sticky top-0 z-10">
         <div className="max-w-2xl mx-auto px-4 py-3 flex items-center gap-3">
-          <div className="text-2xl">🎫</div>
+          <div className="text-2xl">🏔️</div>
           <div className="flex-1 min-w-0">
             <div className="flex items-center justify-between">
-              <span className="text-xs font-semibold text-[#1a2f5e]">Ticket Office Induction{userName ? ` · ${userName}` : ''}</span>
+              <span className="text-xs font-semibold text-[#1a2f5e]">Road & Car Park Induction{userName ? ` · ${userName}` : ''}</span>
               <span className="text-xs text-gray-500">Step {stepId} of {TOTAL_STEPS}</span>
             </div>
             <div className="mt-1.5 h-2 bg-gray-200 rounded-full overflow-hidden">

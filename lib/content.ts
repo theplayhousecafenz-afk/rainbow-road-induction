@@ -8,233 +8,6 @@ export interface Step {
   tip?: string;
 }
 
-export const steps: Step[] = [
-  {
-    id: 1,
-    title: "Welcome & Money Handling",
-    icon: "🎫",
-    content: `Welcome to the Rainbow Ski Area Ticket Office! You are often the very first person a guest interacts with on the mountain — a friendly, efficient window sets the tone for their whole day.
-
-This induction covers the four key areas of the Ticket Office: money handling, day passes and memberships, daily operations, and the gift shop and general duties.
-
-**The Safe**
-Only the Ticket Office Supervisor, Ticket Office 2IC, Mountain Manager, and Customer Services Team Leader have access to the safe key. The safe is locked at all times. All money going in or out must be double-checked and signed off.
-
-**Floats**
-Each ticket window float is $250.00, made up of:
-• $20 × 5 = $100
-• $10 × 5 = $50
-• $5 × 10 = $50
-• $2 × 20 = $40
-• $1 × 10 = $10
-
-Floats must be double-checked every morning and signed in/out by the Ticket Office Supervisor or 2IC.
-
-**Cash Management**
-• If a mistake or refund occurs, print a receipt copy and put it in the till
-• When cashing up, bundle notes in groups of 10, same denomination, facing the same way
-• Running low on change? Ask the Supervisor or 2IC to exchange from the safe — both of you double-check amounts
-
-**Accepted Payment Methods**
-Rainbow ACCEPTS: Cash, EFTPOS (any NZ bank), Bankcard, Mastercard, Visa, Rainbow Work Party Credits, Rainbow Promo Vouchers
-Rainbow does NOT accept: Diners or American Express, Cheques of any kind (except school groups)
-
-**EFTPOS Transactions**
-For a standard card transaction:
-1. Select Credit Cards / EFTPOS as payment method
-2. For automatic transaction press ☑
-3. Swipe or insert card on the EFTPOS pinpad
-4. Guest selects account and enters PIN (or signs)
-5. If signature: give the customer the Merchant copy to sign — always check the signature
-6. Retain the card until the transaction is accepted
-7. Merchant copy goes in cash drawer; customer keeps their copy
-
-**If EFTPOS Goes Offline (EOV Mode)**
-• Transactions process automatically when the system comes back online
-• No refunds or cash out in offline mode
-• Check signatures carefully — the bank will NOT honour fraudulent EOV transactions
-• Maximum 99 EOV transactions per terminal; only one per card`,
-    keyPoints: [
-      "Only Supervisor, 2IC, Mountain Manager, and CS Team Leader can access the safe",
-      "Each window float is exactly $250 — count and sign off every morning",
-      "No Diners, Amex, or personal cheques (school group cheques are ok)",
-      "Always check the signature on signed card transactions",
-      "In offline (EOV) mode: no refunds, no cash out — check signatures carefully",
-    ],
-    warning: "In EOV offline mode, the bank will not cover fraudulent transactions — it is your responsibility to check signatures thoroughly. When in doubt, do not process the transaction.",
-    tip: "If you're ever unsure about a payment or refund, call the Ticket Office Supervisor. It's always better to ask than to fix a mistake later.",
-  },
-  {
-    id: 2,
-    title: "Day Passes, Memberships & Discounts",
-    icon: "🎟️",
-    content: `**Day Pass — Important Language**
-Always call them "Day Passes" — never "lift passes" or "lift tickets." A Day Pass entitles the holder to use all Rainbow facilities: lifts, slopes, toilets, day lodge, café, and car park. It can be revoked for bad behaviour or entering closed areas.
-
-**Age & Pass Definitions**
-• Adult — 18 and over
-• Senior — 65 to 74
-• Super Senior / Golden Age — 75 and over
-• Youth — 7 to 17 years
-• Child — Under 7 years
-• Student — must have current NZ/AUS tertiary ID with the current year. No ISIC cards accepted.
-
-**Learner Passes & Upgrades**
-Learner Day Pass holders may only use beginner and intermediate slopes. To upgrade: clip off the Learner pass, ring the upgrade on the till, and print a full Day Pass of the appropriate type.
-
-**Multi-Day Passes**
-Rainbow sells 3-day and 5-day multi-passes. The guest keeps a "master copy." Each day they visit: mark a strike on their master copy and print a day pass with today's date. When all days are used, discard the master pass.
-
-**Membership Tiers**
-• Gold — ski any day Rainbow is open for free. No ticket queuing. Reciprocal discounts at other NZ ski fields
-• Silver — free skiing on weekdays (including school holidays and public holidays)
-• Bronze — $10 off weekend passes, $20 off weekday passes ($5/$10 for Youths). Must come to the ticket window each day
-• Platinum — life membership, ski any day for life
-
-**Complimentary Vouchers (Comps)**
-Always check the serial number, signature, and validity date before redeeming. Staff may only issue comps if specifically authorised by the Mountain Manager or a Committee Member. Process each voucher separately in SalesPoint: add product → Modify → Discounts → select correct type → enter voucher number. Hand all vouchers in with your daily cash-up.
-
-**Work Party Credits**
-Volunteers earn credits for summer work days. Credits have a unique number. Check the Work Party Credits file, confirm they haven't already used it, process the sale, then mark it as used with date and your initials. Credits expire at the end of the season issued — no carry-over.
-
-**Other Discounts**
-• Industry (50%) — staff of other ski areas or ski/snowboard retailers, with current ID and a letter of introduction dated within two weeks, or verified against the retailer's staff list
-• Reciprocal — full season pass holders from Mt Lyford, Ohau, Treble Cone, Cardrona, or club members from Hanmer Springs, Craigieburn, Broken River, Cheeseman, or Mt Olympus. Adult $20 off, Student $15 off, Youth $10 off
-• Chill13 Pass — full day pass at no cost (Chill13 only — no other Chill passes)
-• Disabled skiers — caretaker accompanying a disabled skier receives a complimentary pass (two for the price of one)
-• Freeform discounts — Supervisor or 2IC only`,
-    keyPoints: [
-      "Always say 'Day Pass' — never 'lift pass' or 'lift ticket'",
-      "Student ID must be current NZ/AUS tertiary ID with current year — no ISIC cards",
-      "Learner passes: clip and ring an upgrade if guest wants to access full slopes",
-      "Comps: always check serial number, signature, and validity date before redeeming",
-      "Work Party Credits expire end of season — no carry-over to next year",
-    ],
-    warning: "Discounts are strictly monitored. Always use the pre-set discount categories in SalesPoint and enter reference details (voucher number, customer name). Freeform discounts require Supervisor or 2IC authorisation only — you cannot apply them yourself.",
-    tip: "When in doubt about a discount entitlement, ask the Supervisor. Ticket Office staff are held accountable for any non-complying discounts.",
-  },
-  {
-    id: 3,
-    title: "Daily Operations & Refunds",
-    icon: "🗂️",
-    content: `**Opening — Supervisor Tasks**
-• Collect till floats from the safe for terminals in use today
-• Check pass rolls in the printers — ensure plenty are loaded and installed correctly
-• Brief window staff on the day's events, conditions, and any special notes
-• Update the blackboard outside with date, weather, and what's on
-
-**Opening — Staff Tasks**
-1. Count your till float — must equal exactly $250.00
-2. Fill out the Daily Cash Up form: date, name, window number — sign that you checked your float
-3. Top up ticket wickets
-4. Tidy inside and outside area, check for rubbish
-5. Fill up retail shelves
-
-**Half-Day Changeover**
-From 12:30 PM, sell half-day products (passes and rental). Change tickets from blue to red.
-
-**Closing — Staff Tasks**
-1. Run a settlement of the EFTPOS terminal — cannot be run before 3:00 PM
-2. Close sessions on your till (MENU / BALANCE and MENU / CLOSE SESSION)
-3. Count out float, put in the correct float bag for your window, have it checked, then put in the safe
-4. Get daily takings printout from Supervisor (or tally all sessions yourself)
-5. Complete the Daily Cash Up form and get another operator to double-check
-6. If not balancing: recheck your float. Still off? Advise the Supervisor
-7. Leave your workspace tidy, empty bins, fill out your timesheet
-
-**Closing — Supervisor Tasks**
-• Collate all daily cash-ups and EFTPOS printouts from each window
-• Put banking in safe and lock
-• Check time sheets
-• Check heaters, turn off lights, secure the building
-
-**School Groups & Group Bookings**
-• Check with the teacher how many of each package type they need
-• Confirm: paying on the day or on account?
-• On account: press ACCOUNTS (top left) and select the school from the list — get the teacher to sign the receipt and print a duplicate for them
-• Schools must pay as a group in one amount — group discounts don't apply if paid separately
-• Accepted for schools: cash, cheque, credit card, EFTPOS
-
-**Refunds**
-• Refunds are processed using the same payment method as the original sale
-• For card refunds: the customer must have the same card with them
-• The Merchant card and PIN (kept in safe) are needed for card refunds — get from Supervisor
-• There is NO refund on rental equipment — rental refund decisions are at the discretion of the Customer Services Team Leader
-• Guest injuries: no refunds without approval from the Mountain Manager, Ticket Office Supervisor, or 2IC
-
-**Rental Cards at the Ticket Window**
-When a guest buys rental equipment at your window:
-1. Fill out the rental card with what they have paid
-2. Ask for ID (driver's licence, credit card, or car rego) and record the number on the card
-3. Maximum four customers per rental card
-4. After payment, staple the receipt duplicate to the back of the rental card
-5. Ask the customer to keep their original receipt and take the stapled card to Rentals
-6. Advise beginner/intermediate snowboarders to wear a wrist guard`,
-    keyPoints: [
-      "Float must be exactly $250 — count and sign off before your first sale",
-      "Half-day switchover (blue to red tickets) happens at 12:30 PM",
-      "EFTPOS settlement cannot be run before 3:00 PM",
-      "Till not balancing? Recheck your float first, then tell your Supervisor",
-      "No rental refunds — refer all rental refund requests to the Customer Services Team Leader",
-    ],
-    warning: "Never process a refund for a guest injury without approval from the Mountain Manager, Ticket Office Supervisor, or 2IC. This policy applies even if the guest is very upset — always escalate to your Supervisor.",
-    tip: "If your till isn't balancing at close, a float counting error at the start of the day is the most common cause. Double-check your morning count first.",
-  },
-  {
-    id: 4,
-    title: "Gift Shop, Stock & General Duties",
-    icon: "🛍️",
-    content: `**Clothing Hire**
-The Ticket Office hires out clothing to guests. Record all hires correctly and make sure guests understand the return process and any charges that apply for damage or late return.
-
-**Toboggan Hire**
-Toboggans are available for hire at the ticket window. Record the hire and advise guests of the return time and the designated toboggan area. Only hire to guests who will use toboggans in the correct area.
-
-**Retail**
-The Gift Shop sells Rainbow merchandise and ski-related items. Keep shelves tidy and stocked. All retail sales must go through the till — no exceptions.
-
-**Stock Management**
-• Stationery — keep an eye on rental cards, daily cash-up forms, receipt rolls, and office supplies. Tell the Supervisor when stocks are getting low
-• Passes — check pass rolls in the printers at opening. Replace a roll promptly if it runs low mid-day and advise the Supervisor
-• General — keep the ticket office and gift shop tidy and well-presented at all times
-
-**Lost and Found**
-• Items handed in: place in the lost property area
-• Valuable items (phone, wallet, keys): give directly to the Ticket Office Supervisor immediately — do not leave them unattended
-• Someone claiming a lost item: they must describe it before you show it to them
-• Record all lost property handed in
-
-**Voice Messages**
-Check and action voice messages at the start of each day. Pass enquiries you cannot answer to the Ticket Office Supervisor. Common messages: group bookings, membership questions, lost property calls.
-
-**General Guest Advice**
-When guests ask what to bring or wear, advise:
-• Sunglasses and sunscreen
-• Warm clothing in layers
-• Hats and gloves
-• Waterproof trousers — essential!
-
-**Maintenance**
-Log all non-routine maintenance and repair requirements on the RSCI SharePoint portal (skirainbow.sharepoint.com). Check open tasks first — if it's not already listed, create a new task with item, category, description, priority, and due date.
-
-**End of Season Close Down**
-• Complete a full stocktake of equipment, consumables, stationery, and retail stock
-• List what is needed for the start of next season
-• Clean all areas thoroughly and remove all rubbish
-• Hand in all lost property to the Customer Services Manager
-• Report any maintenance or repairs needed for next season
-• Turn off all heaters and lock the building securely`,
-    keyPoints: [
-      "All retail sales go through the till — no exceptions",
-      "Valuable lost property goes straight to the Ticket Office Supervisor, not left unattended",
-      "Check pass rolls and stationery stocks at the start of every shift",
-      "Check and action voice messages first thing every day",
-      "Log all maintenance on the RSCI SharePoint portal",
-    ],
-    tip: "A tidy, well-stocked ticket office and gift shop makes a great first impression. Take 10 minutes at the start and end of each shift to make sure everything is in order.",
-  },
-];
-
 export interface QuizQuestion {
   id: number;
   question: string;
@@ -243,65 +16,267 @@ export interface QuizQuestion {
   explanation: string;
 }
 
-export const quizQuestions: QuizQuestion[] = [
+export const steps: Step[] = [
   {
     id: 1,
-    question: "A guest wants to pay with an American Express card. What do you do?",
-    options: [
-      "Accept it — any credit card is fine at Rainbow",
-      "Politely decline — Rainbow does not accept Amex or Diners cards",
-      "Accept it only if the amount is over $50",
-      "Ask the Supervisor to approve it first",
+    title: 'Welcome & Your Role Today',
+    icon: '🏔️',
+    content: `Welcome to Rainbow Ski Area! As a volunteer helping with road and car park duties, you play a vital role in keeping our guests and staff safe on one of New Zealand's alpine access roads.
+
+**What This Induction Covers**
+This induction gives you an overview of the road and car park environment, the key safety rules, and what to expect on a typical day.
+
+**The Access Road**
+The Rainbow access road is a public road when the gate is unlocked. Once open, Rainbow Ski Area is responsible for taking all reasonable steps to ensure user safety on the road. Guests must follow all signage and staff directions.
+
+**Your Responsibilities as a Volunteer**
+• Always follow instructions from the Mountain Manager or their delegate
+• Wear your high-visibility vest at all times when working outdoors
+• Never direct traffic or make road decisions without supervisor approval
+• If in doubt about anything — ask your supervisor first
+
+**Chain of Command**
+The Mountain Manager has overall responsibility for road and car park operations. If the Mountain Manager is not on site, their designated relief manager takes over. Always know who is in charge for your shift before you start work.
+
+**Before You Start**
+Check in with your supervisor, confirm where you are stationed, and make sure you have your radio (if assigned one) and know the radio check-in procedure.`,
+    keyPoints: [
+      'You are in an alpine environment — conditions can change rapidly',
+      'Always follow signage and supervisor instructions',
+      'Wear your hi-vis vest whenever you are working outdoors',
+      'Know who the duty manager is before your shift starts',
     ],
-    correct: 1,
-    explanation: "Rainbow does not accept American Express or Diners cards. Accepted cards are EFTPOS (any NZ bank), Bankcard, Mastercard, and Visa.",
+    tip: 'If you ever feel unsafe or unsure about a situation, stop and ask your supervisor. There is never pressure to do something that feels unsafe.',
   },
   {
     id: 2,
-    question: "A guest presents an ISIC (International Student Identity Card) and asks for a student discount. What do you do?",
-    options: [
-      "Accept it — it's a recognised international student ID",
-      "Accept it only if it has a photo on it",
-      "Decline — Rainbow does not accept ISIC cards for student discount",
-      "Give a 25% discount instead of the full student rate",
+    title: 'Car Park Management',
+    icon: '🚗',
+    content: `Managing the car parks efficiently ensures maximum capacity and smooth traffic flow. Good car park management directly impacts the guest experience.
+
+**Car Park Order — Fill in This Sequence**
+1. Main car park first
+2. Robert Lodge car park second
+3. Top car park third
+4. Directors car park fourth
+5. Doppelmayr hut area
+6. Chains bay 3 (overflow)
+
+**Key Rules**
+• Leave room for the Ambulance in front of the Patrol First Aid Room and Toilets at all times
+• Staff park in the middle car park — not in guest areas
+• On busy days, park vehicles bumper-to-bumper with a 6.5m gap between each double row to maximise space
+• Close Directors car park until it is genuinely needed
+• Assign someone to manage Robert Lodge car park on busy days
+
+**Directing Traffic**
+• Use clear, confident hand signals
+• Make eye contact with the driver before signalling
+• Signal one car at a time — never wave multiple vehicles through at once
+• If a vehicle is oversized or a campervan, check with your supervisor before placing it
+
+**When It Gets Busy**
+When you are expecting a full day, maintain control of every car park including Robert Lodge and Directors. Start filling in order and do not skip ahead — a half-full top car park with an empty main area causes confusion and congestion.`,
+    keyPoints: [
+      'Fill main car park first, then Robert Lodge, Top, Directors',
+      'Always keep Ambulance access clear in front of Patrol First Aid Room',
+      'Staff park in the middle car park only',
+      'Close Directors car park until needed on busy days',
     ],
-    correct: 2,
-    explanation: "Rainbow does not accept ISIC cards. Student discount requires a current NZ or Australian tertiary institution ID showing the current year.",
+    warning: 'Never block the ambulance access area in front of the Patrol First Aid Room. This must remain clear at all times — no exceptions.',
   },
   {
     id: 3,
-    question: "The EFTPOS system goes offline. A guest wants a cash refund for an item they paid for by EFTPOS. What do you do?",
-    options: [
-      "Process it in cash — simpler and the guest shouldn't have to wait",
-      "No refunds or cash out are permitted while in offline (EOV) mode",
-      "Process it offline and sort it out when the system comes back",
-      "Ask the customer to come back the next day",
+    title: 'Road Safety & Chains Policy',
+    icon: '⛓️',
+    content: `The access road is an alpine environment. Ice, snow, and rapidly changing conditions make road safety critical for everyone.
+
+**Chains Policy — No Exceptions**
+Rainbow's chains policy is absolute: No chains, No access, No exceptions. All vehicles must carry chains when the chains call is in effect.
+
+• If a vehicle arrives without chains, direct them to the shuttle bus service from the bottom car park
+• Private staff and sub-contractor vehicles must also obey the daily chains call
+• The chains call for the day must be made by 6:00am so it can be included in morning reports
+
+**Types of Chain Call**
+• **Carry Chains** — chains must be in the vehicle but may not need fitting yet
+• **Fit Chains** — chains must be fitted before proceeding
+• **4WD Carry Chains** — 4WD vehicles carry chains, 2WD must fit chains
+• **Road Closed** — no public vehicles proceed; staff only with supervisor authorisation
+
+**What You Tell Guests**
+If a vehicle arrives without chains when chains are required: politely explain the policy, offer directions to the shuttle bus pickup point, and do not let them proceed. You are keeping them safe, not being difficult.
+
+**Icy Conditions & Traffic Management**
+In very difficult conditions, traffic may be released in intervals:
+• 200m spacing between vehicles on the road at all times
+• Vehicles must stay in low gear on descent
+• Drivers should pump brakes gently — never lock wheels
+• Slow down before corners and steep sections, not during them
+
+**Grit & Signage**
+If grit has been applied to icy sections, do not let vehicles park on grit areas. Alert your supervisor if a gritty section has become icy again.`,
+    keyPoints: [
+      'No chains, No access — no exceptions, including staff vehicles',
+      'Chain call must be made by 6:00am each day',
+      'Vehicles without chains are directed to the shuttle bus',
+      'In icy conditions: 200m spacing, low gear, pump brakes gently',
     ],
-    correct: 1,
-    explanation: "In EOV offline mode, no refunds and no cash out are permitted under any circumstances. The guest must return when the EFTPOS system is back online.",
+    warning: 'Never wave a vehicle through without chains when the chains call requires them. This is a non-negotiable safety rule.',
+    tip: 'When in doubt about the chain call status, radio your supervisor or check the morning briefing notes rather than making a call yourself.',
   },
   {
     id: 4,
-    question: "What is the correct procedure when a guest is injured on the mountain and asks for a Day Pass refund?",
-    options: [
-      "Issue a full refund — it's the compassionate thing to do",
-      "Offer a partial refund based on how long they skied",
-      "No refund without approval from the Mountain Manager, Ticket Office Supervisor, or 2IC",
-      "Give them a credit voucher for another day",
+    title: 'Health & Safety on the Road',
+    icon: '🦺',
+    content: `Working on an alpine access road presents unique hazards. Understanding these risks and how to manage them keeps you and our guests safe.
+
+**Personal Safety Rules**
+• Always wear your high-visibility vest when working in or near traffic
+• Never stand in the path of moving vehicles
+• Stay aware of your surroundings — vehicles on snow and ice take longer to stop
+• Do not use your personal phone while directing traffic
+• Work in pairs where possible, especially in poor visibility
+
+**Avalanche Awareness**
+Rainbow's access road passes through known avalanche paths. As a car park or road volunteer, you are not expected to assess avalanche risk — that is for trained patrol staff. However you must:
+• Know the location of your designated safe shelter area before your shift starts
+• Follow all evacuation instructions from patrol staff immediately
+• Never enter a closed zone, even briefly
+
+**Weather & Visibility**
+Alpine weather changes fast. If conditions deteriorate significantly during your shift:
+• Alert your supervisor immediately
+• Do not make independent decisions about road closures
+• Move guests to shelter if directed to do so
+
+**Radio Codes You Should Know**
+• 10-4 — OK, message understood
+• 10-9 — Please repeat
+• 10-20 — What is your location?
+• 10-40 — Accident
+• 10-50 — Vehicle off road
+• Code 3 — Life threatening emergency
+
+**If There Is an Accident**
+Do not attempt vehicle recovery yourself. Your role is to:
+1. Keep other traffic clear of the scene
+2. Radio your supervisor immediately using 10-40 (accident) or Code 3 if life-threatening
+3. Keep bystanders back
+4. Follow all instructions from patrol or management
+
+Emergency rescue packs are located in the Patrol Room at the base area.`,
+    keyPoints: [
+      'Hi-vis vest on at all times when working outdoors',
+      'Know your safe shelter location before your shift starts',
+      'Radio 10-40 for accident, Code 3 for life-threatening emergency',
+      'Never attempt vehicle recovery — that is for trained staff only',
     ],
-    correct: 2,
-    explanation: "In the event of a guest injury, no refunds are given without explicit approval from the Mountain Manager, Ticket Office Supervisor, or Ticket Office 2IC. Always escalate — do not make exceptions.",
+    warning: 'If you hear an avalanche warning or see snow movement above the road, immediately move yourself and nearby guests to your designated shelter and radio patrol.',
   },
   {
     id: 5,
-    question: "At what time can you run the EFTPOS terminal settlement as part of closing the Ticket Office?",
+    title: 'End of Day & Key Reminders',
+    icon: '✅',
+    content: `As your shift wraps up, there are some important procedures to follow to ensure the road and car park are left safely.
+
+**End of Day Car Park**
+• Ensure all guests have left the car park before leaving your post
+• Report any vehicles remaining after close to your supervisor — do not leave them unattended without notifying management
+• Remove any cones or signage placed during your shift, unless advised otherwise by your supervisor
+
+**Gate Closure**
+The access road gate is closed every night by the patrol vehicle or staff bus. The gate must have a sign indicating no access when closed. As a volunteer, do not attempt to close or lock the gate unless specifically instructed and trained to do so.
+
+**Reporting Issues**
+If you noticed anything during your shift that needs follow-up, report it before you leave:
+• Damaged signage or cones
+• Icy patches that developed during the day
+• Vehicles that behaved dangerously
+• Any near-miss or safety concern
+
+**Debrief**
+At the end of your shift, check in with your supervisor. Let them know:
+• How the car parks filled (which areas were used)
+• Any issues with guest compliance (chains, speeding, etc.)
+• Anything that seemed unsafe or that surprised you
+
+**Thank You**
+Volunteers are an essential part of Rainbow Ski Area. Your work in the car park and on the road directly contributes to a safer, more enjoyable day for every guest. Thank you for being here.
+
+**Key Contacts**
+• Supervisor: check in at the start of your shift
+• Patrol Room: located at the base area
+• Radio: Channel 1 is the primary operating channel`,
+    keyPoints: [
+      'Confirm all guests have left before leaving your post',
+      'Report remaining vehicles and safety concerns to your supervisor',
+      'Debrief with your supervisor at end of shift',
+      'Do not lock the gate unless specifically trained and instructed to',
+    ],
+    tip: 'Keep a mental note (or jot it down) of anything unusual during your shift — even small observations can be useful in a debrief.',
+  },
+];
+
+export const quizQuestions: QuizQuestion[] = [
+  {
+    id: 1,
+    question: 'What is the correct order to fill the car parks on a busy day?',
     options: [
-      "Any time after midday",
-      "Only after the very last transaction of the day",
-      "Not before 3:00 PM",
-      "At exactly 5:00 PM when the mountain closes",
+      'Directors first, then Robert Lodge, then Main',
+      'Main car park first, Robert Lodge second, Top third, Directors fourth',
+      'Top car park first to keep the main area free for latecomers',
+      'Any order is fine as long as all parks are eventually used',
+    ],
+    correct: 1,
+    explanation: 'Always fill the Main car park first, then Robert Lodge, Top, and Directors. Directors should be closed until genuinely needed.',
+  },
+  {
+    id: 2,
+    question: "A vehicle arrives without chains when the chain call is 'Fit Chains'. What do you do?",
+    options: [
+      'Let them through if they have 4WD',
+      'Ask your supervisor if they seem like experienced drivers',
+      'Direct them to the shuttle bus — No chains, No access, No exceptions',
+      'Allow them to park in the bottom car park and walk up',
     ],
     correct: 2,
-    explanation: "The EFTPOS settlement cannot be run before 3:00 PM. This is a required part of the closing procedure for all ticket office staff.",
+    explanation: "Rainbow's chains policy is absolute: No chains, No access, No exceptions. Direct them to the shuttle bus pickup point.",
+  },
+  {
+    id: 3,
+    question: 'What radio code do you use to report an accident on the road?',
+    options: [
+      '10-9',
+      '10-50',
+      '10-40',
+      'Code 3',
+    ],
+    correct: 2,
+    explanation: '10-40 means Accident. Code 3 is for life-threatening emergencies only. 10-50 means vehicle off road.',
+  },
+  {
+    id: 4,
+    question: 'Where must ambulance access be kept clear at all times?',
+    options: [
+      'The main entrance to the car park',
+      'In front of the Patrol First Aid Room and Toilets',
+      'The Directors car park',
+      'The top of the main car park',
+    ],
+    correct: 1,
+    explanation: 'The ambulance access in front of the Patrol First Aid Room and Toilets must remain clear at all times — no vehicles parked there.',
+  },
+  {
+    id: 5,
+    question: 'If you see snow movement or hear an avalanche warning above the road, what should you do first?',
+    options: [
+      'Stay at your post and continue directing traffic',
+      'Take a photo and report it after your shift',
+      'Move yourself and nearby guests to your designated shelter and radio patrol immediately',
+      'Wait for instructions from patrol before moving anyone',
+    ],
+    correct: 2,
+    explanation: 'Your immediate priority is moving yourself and guests to the designated safe shelter and radioing patrol. Do not wait — act immediately.',
   },
 ];

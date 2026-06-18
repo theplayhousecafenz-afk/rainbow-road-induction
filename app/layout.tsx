@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Rainbow Ski Area – Ticket Office Induction",
-  description: "Ticket Office Induction for Rainbow Ski Area volunteers and staff.",
+  title: "Rainbow Ski Area – Road & Car Park Induction",
+  description: "Road and Car Park Induction for Rainbow Ski Area volunteers and staff.",
 };
 
 export default function RootLayout({
