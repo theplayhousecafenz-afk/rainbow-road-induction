@@ -94,7 +94,7 @@ When you are expecting a full day, maintain control of every car park including 
 **Chains Policy — No Exceptions**
 Rainbow's chains policy is absolute: No chains, No access, No exceptions. All vehicles must carry chains when the chains call is in effect.
 
-• If a vehicle arrives without chains, direct them to the shuttle bus service from the bottom car park
+• If a vehicle arrives without chains, direct them to the shuttle bus or a safe location where they can hitch a lift
 • Private staff and sub-contractor vehicles must also obey the daily chains call
 • The chains call for the day must be made by 6:00am so it can be included in morning reports
 
@@ -105,7 +105,7 @@ Rainbow's chains policy is absolute: No chains, No access, No exceptions. All ve
 • **Road Closed** — no public vehicles proceed; staff only with supervisor authorisation
 
 **What You Tell Guests**
-If a vehicle arrives without chains when chains are required: politely explain the policy, offer directions to the shuttle bus pickup point, and do not let them proceed. You are keeping them safe, not being difficult.
+If a vehicle arrives without chains when chains are required: politely explain the policy, direct them to the shuttle bus or a safe location where they can hitch a lift, and do not let them proceed. You are keeping them safe, not being difficult.
 
 **Icy Conditions & Traffic Management**
 In very difficult conditions, traffic may be released in intervals:
@@ -115,7 +115,15 @@ In very difficult conditions, traffic may be released in intervals:
 • Slow down before corners and steep sections, not during them
 
 **Grit & Signage**
-If grit has been applied to icy sections, do not let vehicles park on grit areas. Alert your supervisor if a gritty section has become icy again.`,
+If grit has been applied to icy sections, do not let vehicles park on grit areas. Alert your supervisor if a gritty section has become icy again.
+
+**Grit Spreading — Safety**
+If you are asked to help spread grit on the road or car park, be aware of the following hazards:
+• **Moving vehicles** — always face traffic and stay visible. Never turn your back on the road
+• **Slippery surface** — the very area you are gritting is icy. Move carefully, wear suitable footwear, and never rush
+• **Reversing vehicles** — if grit is being carted by a vehicle, stay well clear of the reversing path. Never stand behind a vehicle that is manoeuvring. Make eye contact with the driver before approaching
+
+Only spread grit when directed by your supervisor. If in doubt about safety at any point, stop and check in before continuing.`,
     keyPoints: [
       'No chains, No access — no exceptions, including staff vehicles',
       'Chain call must be made by 6:00am each day',

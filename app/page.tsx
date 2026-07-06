@@ -40,7 +40,7 @@ export default function WelcomePage() {
           <div className="bg-white rounded-2xl shadow-md overflow-hidden">
             <div className="bg-[#1a2f5e] px-6 py-5 text-white">
               <div className="text-3xl mb-2">🚗</div>
-              <h2 className="text-xl font-bold">Welcome, Volunteer!</h2>
+              <h2 className="text-xl font-bold">Welcome to Rainbow Ski Area</h2>
               <p className="text-blue-200 text-sm mt-1">Rainbow Ski Area · Nelson Lakes · Te Tau Ihu</p>
             </div>
             <div className="px-6 py-5">
