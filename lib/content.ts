@@ -21,7 +21,7 @@ export const steps: Step[] = [
     id: 1,
     title: 'Welcome & Your Role Today',
     icon: '🏔️',
-    content: `Welcome to Rainbow Ski Area! As a volunteer helping with road and car park duties, you play a vital role in keeping our guests and staff safe on one of New Zealand's alpine access roads.
+    content: `Welcome to Rainbow Ski Area! Whether you are a staff member or volunteer helping with road and car park duties, you play a vital role in keeping our guests and staff safe on one of New Zealand's alpine access roads.
 
 **What This Induction Covers**
 This induction gives you an overview of the road and car park environment, the key safety rules, and what to expect on a typical day.
@@ -29,7 +29,7 @@ This induction gives you an overview of the road and car park environment, the k
 **The Access Road**
 The Rainbow access road is a public road when the gate is unlocked. Once open, Rainbow Ski Area is responsible for taking all reasonable steps to ensure user safety on the road. Guests must follow all signage and staff directions.
 
-**Your Responsibilities as a Volunteer**
+**Your Responsibilities**
 • Always follow instructions from the Mountain Manager or their delegate
 • Wear your high-visibility vest at all times when working outdoors
 • Never direct traffic or make road decisions without supervisor approval
@@ -147,7 +147,7 @@ Only spread grit when directed by your supervisor. If in doubt about safety at a
 • Work in pairs where possible, especially in poor visibility
 
 **Avalanche Awareness**
-Rainbow's access road passes through known avalanche paths. As a car park or road volunteer, you are not expected to assess avalanche risk — that is for trained patrol staff. However you must:
+Rainbow's access road passes through known avalanche paths. As a car park or road team member, you are not expected to assess avalanche risk — that is for trained patrol staff. However you must:
 • Know the location of your designated safe shelter area before your shift starts
 • Follow all evacuation instructions from patrol staff immediately
 • Never enter a closed zone, even briefly
@@ -194,7 +194,7 @@ Emergency rescue packs are located in the Patrol Room at the base area.`,
 • Remove any cones or signage placed during your shift, unless advised otherwise by your supervisor
 
 **Gate Closure**
-The access road gate is closed every night by the patrol vehicle or staff bus. The gate must have a sign indicating no access when closed. As a volunteer, do not attempt to close or lock the gate unless specifically instructed and trained to do so.
+The access road gate is closed every night by the patrol vehicle or staff bus. The gate must have a sign indicating no access when closed. As a volunteer, do not attempt to close or lock the gate unless specifically instructed and trained to do so — this applies to both staff and volunteers.
 
 **Reporting Issues**
 If you noticed anything during your shift that needs follow-up, report it before you leave:
@@ -210,7 +210,7 @@ At the end of your shift, check in with your supervisor. Let them know:
 • Anything that seemed unsafe or that surprised you
 
 **Thank You**
-Volunteers are an essential part of Rainbow Ski Area. Your work in the car park and on the road directly contributes to a safer, more enjoyable day for every guest. Thank you for being here.
+Staff and volunteers are an essential part of Rainbow Ski Area. Your work in the car park and on the road directly contributes to a safer, more enjoyable day for every guest. Thank you for being here — whether paid or volunteering, your contribution matters.
 
 **Key Contacts**
 • Supervisor: check in at the start of your shift
